@@ -65,7 +65,7 @@ function App({ complist, update_list }) {
   return (
     <div className="bg-blue-100 font-sans">
      <div className={classes.header}>
-     <img src='/scratch.svg' className={classes.logo}/>
+     <img src='/scratch.svg' className={classes.logo} alt="Description of image"/>
      </div>
       <div className="h-screen overflow-hidden flex flex-row pt-6">
         <DragDropContext onDragEnd={onDragEnd}>

@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) =>
   })
 );
 
-function PreviewArea({ character, add_character, set_active }) {
+function PreviewArea({ character, set_active }) {
   const classes = useStyles();
   const [active, setActive] = useState(character.active);
   var pos1 = 0,

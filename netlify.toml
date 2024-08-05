@@ -1,6 +1,6 @@
 [build]
-  base = "" # Leave this empty if your package.json is in the root directory
-  publish = "public" # Directory where the built files are located
+  base = "" 
+  publish = "public" 
   command = "npm run build"
 
 [functions]
