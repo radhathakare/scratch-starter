@@ -1,86 +1,30 @@
-# Scratch Clone
-This is Scratch-Clone using React and Redux.
+# Scratch Starter Project - [Link](https://master--radhathakare-scratch-clone.netlify.app/)
 
-https://user-images.githubusercontent.com/60813449/206870474-281c502a-a18b-40e2-8fcc-721c1acbfe5e.mp4
-## Features
+## Overview
 
-    1. Drag and Drop your favourite functions to the lists
-    2. Move functions between lists
-    3. If you want to remove any function from Mid Area just drag and drop outside list
-    4. You can create as many sprints as you want
-    5. Move the sprint around Preview Area using Mouse
-    6. Choose Sprint for which you want to execute you GUI Program
-    7. Create as many as you like program lists
-    8. Create long programs
+This project is a web application inspired by Scratch, where users can create and execute commands to manipulate a cat sprite on the screen. The project utilizes React, Redux, and various utilities to implement drag-and-drop functionalities, command parsing, and execution.
 
-
-## Sections
-    Motion
-      1. Move in horizontal and vertical direction
-      2. Rotate (Clockwise and Anti-Clockwise)
-      3.   Goto coordinate
-
-    Looks
-      1. You want your sprint to say some message
-      2. Show Message for some duration
-      3. Thinking ability to Sprint
-      4. Think for some defined time
-      5. Disappear thoughts
-      6. Show Sprint
-      7. Hide Sprint
-
-    Events
-      1. Broadcast a Message (Notification)
-
-    Control
-      1. Wait for some duration
-      2. Repeat certain functions for speicified amount of times
-## Sections
-    Motion
-      1. Move in horizontal and vertical direction
-      2. Rotate (Clockwise and Anti-Clockwise)
-      3.   Goto coordinate
-
-    Looks
-      1. You want your sprint to say some message
-      2. Show Message for some duration
-      3. Thinking ability to Sprint
-      4. Think for some defined time
-      5. Disappear thoughts
-      6. Show Sprint
-      7. Hide Sprint
-
-    Events
-      1. Broadcast a Message (Notification)
-
-    Control
-      1. Wait for some duration
-      2. Repeat certain functions for speicified amount of times
 ## Tech Stack
-
      ReactJs , Javascript
+     
 ## Libraraies
     1. TailwindCSS
     2. Notistack
     3. Redux
     4. Material UI
 
-
-
-
-
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/Kashifraza1208/scratch-app.git
+  git clone https://github.com/radhathakare/scratch-starter.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd scratch-clone
+  cd scratch-starter
 ```
 
 Install dependencies
@@ -89,9 +33,64 @@ Install dependencies
   npm install
 ```
 
-Start the server
+## Components
 
-```bash
-  npm run start
-```
+### MidArea
+MidArea is the main interactive area where users can drop and run commands. It uses Redux to manage the state of tabs and commands.
+
+### Functionality:
+
+reset: Resets the position and rotation of the cat sprite.
+flattenCommands: Flattens the commands object into an array.
+execute: Handles the execution of commands based on the clicked button (Run, Reset, Replay).
+CatSprite
+CatSprite represents the cat sprite that will be manipulated by the commands.
+
+## Features
+Drag and Drop Functions:
+
+Drag and drop your favorite functions to the lists.
+Move functions between lists.
+Remove functions from the Mid Area by dragging and dropping outside the list.
+Multiple Sprites:
+
+Create as many sprites as you want.
+Move the sprite around the Preview Area using the mouse.
+Choose a sprite for which you want to execute your GUI program.
+Program Creation:
+
+Create as many program lists as you like.
+Create long programs by adding multiple commands.
+
+### Motion
+Move in horizontal and vertical directions.
+Rotate (Clockwise and Anti-Clockwise).
+Go to coordinate.
+
+### Looks
+Make your sprite say some message.
+Show message for a specified duration.
+Add thinking ability to the sprite.
+Think for a defined time.
+Disappear thoughts.
+Show sprite.
+Hide sprite.
+
+### Events
+Broadcast a message.
+
+### Control
+Wait for a specified duration.
+Repeat certain functions for a specified number of times.
+
+
+### Demo Video
+
+https://github.com/user-attachments/assets/a64cd6f2-1617-44b1-a225-14d31ba5a489
+
+
+
+
+
+
 
