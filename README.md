@@ -9,9 +9,8 @@ This project is a web application inspired by Scratch, where users can create an
      
 ## Libraraies
     1. TailwindCSS
-    2. Notistack
-    3. Redux
-    4. Material UI
+    2. Redux
+    
 
 ## Run Locally
 
