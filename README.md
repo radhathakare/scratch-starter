@@ -1,4 +1,4 @@
-# Scratch Starter Project - [Link](https://master--radhathakare-scratch-clone.netlify.app/)
+# Scratch Starter Project - [Link](https://master--radhathakare-scratch-starter.netlify.app/)
 
 ## Overview
 
@@ -84,9 +84,7 @@ Wait for a specified duration.
 Repeat certain functions for a specified number of times.
 
 
-### Demo Video
 
-https://github.com/user-attachments/assets/a64cd6f2-1617-44b1-a225-14d31ba5a489
 
 
 
