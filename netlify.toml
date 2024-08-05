@@ -1,9 +1,10 @@
 [build]
   base = "" 
-  publish = "public" 
+  publish = "build" 
   command = "npm run build"
 
 [functions]
   directory = "netlify/functions"
+
 [build.environment]
   NODE_VERSION = "16"
