@@ -1,41 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import Paper from "@material-ui/core/Paper";
 
-// Move Component for Sidebar
+// MoveY Component for Sidebar
 const MoveY = ({ character, comp_id }) => {
-  const [steps, setSteps] = useState(0);
+  const steps = 10; // Static value for steps
 
-  // Function used for moiving Sprint in Y direction
+  // Function used for moving the sprite in the Y direction
   const handleClick = () => {
     const el = document.getElementById(`${character.active}-div`);
 
-    var top = el.offsetTop;
-    el.style.position = "relative";
-    el.style.top = top + steps + "px";
+    if (el) {
+      const top = el.offsetTop;
+      el.style.position = "relative";
+      el.style.top = top + steps + "px";
+    }
   };
 
   return (
     <Paper elevation={3}>
       <div
         id={comp_id}
-        className={`text-center rounded bg-blue-700 text-white p-2 my-2 text-sm cursor-pointer mx-auto`}
-        onClick={() => handleClick()}
+        className="text-center rounded bg-blue-700 text-white p-2 my-2 text-sm cursor-pointer mx-auto"
+        onClick={handleClick}
       >
-        Move Y{" "}
-        <input
-          type="number"
-          className="text-black text-center w-16 mx-2"
-          value={steps}
-          onChange={(e) => setSteps(parseInt(e.target.value))}
-        />{" "}
-        steps
+        Move Y {steps} steps
       </div>
     </Paper>
   );
 };
 
-// mapping state to component
+// Mapping state to component
 const mapStateToProps = (state) => {
   return {
     character: state.character,
